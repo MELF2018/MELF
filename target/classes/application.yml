@@ -1,0 +1,16 @@
+server:
+  port: 8090
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql:///smarkcheck?serverTimezone=UTC&useUnicode=true&characterEncoding=utf8
+    username: root
+    password: 123456789
+  mvc:
+    view:
+      prefix: /
+      suffix: .jsp
+# 打印sql
+logging:
+  level:
+   org.melf.dao : debug
